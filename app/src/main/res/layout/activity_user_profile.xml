@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rakib.soberpoint.fragment.MyProfileFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.rakib.soberpoint.activities.UserProfileActivity">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:tint="@color/colorIcons"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/hmm"
+            android:layout_below="@+id/rl_toolbar"
+            android:background="@drawable/toolbar_dropshadow"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/hmm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/user_cover_image"
+                        android:src="@drawable/launcher_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/launcher_image"
+                        android:layout_gravity="bottom|center"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/black"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/add_connection"
+                    android:padding="10dp"
+                    android:text="Add Connection"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:text="My profile info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Name" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="Profile Name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_person_24" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bio" />
+
+                <TextView
+                    android:id="@+id/bio"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="Bio"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_person_24" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write down SSC institute" />
+
+                <TextView
+                    android:id="@+id/ssc"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="example school and college"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_person_24" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write down HSC institute" />
+
+                <TextView
+                    android:id="@+id/hsc"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="example school and college"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_person_24" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write down Graduation institute" />
+
+                <TextView
+                    android:id="@+id/graduation"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="example university"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_person_24" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Where are you from?" />
+
+                <TextView
+                    android:id="@+id/from"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="from where"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_person_24" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:text="My Posts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_my_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

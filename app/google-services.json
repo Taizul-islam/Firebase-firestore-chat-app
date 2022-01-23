@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "447924617341",
+    "project_id": "sober-point-1865d",
+    "storage_bucket": "sober-point-1865d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447924617341:android:027c00f4582c5f4618b114",
+        "android_client_info": {
+          "package_name": "com.rakib.soberpoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447924617341-f11l2vmj8rkm2jg01f47c73dp1qohclm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rakib.soberpoint",
+            "certificate_hash": "3e72963d1137c7666eb4f12801991f042a6e596a"
+          }
+        },
+        {
+          "client_id": "447924617341-e25sqis2ojkpfotau2egpr3qu6uhmtbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg6USzTGDwoZ8ODbe_GXP2Wr_G1aedFDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447924617341-e25sqis2ojkpfotau2egpr3qu6uhmtbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SoberPoint</string>
+    <string-array name="feeling">
+        <item>Happy</item>
+        <item>Sad</item>
+        <item>Excited</item>
+        <item>Cool</item>
+        <item>Alone</item>
+        <item>Angry</item>
+        <item>Sick</item>
+        <item>Emotional</item>
+        <item>Fresh</item>
+        <item>Lucky</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

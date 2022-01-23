@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.rakib.soberpoint.activities.SingleImageUploadActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back"
+            app:tint="@color/colorIcons" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="Upload Image"
+            android:fontFamily="@font/brawler"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_toEndOf="@+id/back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/toolbar_dropshadow" />
+    <ProgressBar
+        android:visibility="gone"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_horizontal"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textview999"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Upload cover photo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/profile_image"
+            android:src="@drawable/ic_user"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="100dip"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/profile_image1"
+            android:src="@drawable/ic_take_adv_image"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fdfds"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_above="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:layout_margin="5dp"
+            android:onClick="choose_image"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Choose image from gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="btn_update"
+        android:id="@+id/btn_update"
+        android:textSize="20sp"
+        android:text="Upload"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
